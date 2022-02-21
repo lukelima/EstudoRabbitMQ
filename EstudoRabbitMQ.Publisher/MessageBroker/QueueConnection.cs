@@ -27,10 +27,10 @@ namespace EstudoRabbitMQ.Publisher.MessageBroker
         private ConnectionFactory GetConnection(RabbitMqConfigurations configurations)
             => new ConnectionFactory
             {
-                HostName = configurations.Connection.Hostname,
-                Port = configurations.Connection.Port,
-                UserName = configurations.Connection.Username,
-                Password = configurations.Connection.Password,
+                HostName = configurations.Hostname,
+                Port = configurations.Port,
+                UserName = configurations.Username,
+                Password = configurations.Password,
             };
     }
 }
